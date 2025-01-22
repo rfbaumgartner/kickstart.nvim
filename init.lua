@@ -700,6 +700,7 @@ require('lazy').setup({
           },
         },
         angularls = {},
+        bashls = {},
         cssls = {},
         eslint = {},
         html = {},
@@ -707,7 +708,7 @@ require('lazy').setup({
         dockerls = {},
         docker_compose_language_service = {},
         jsonls = {},
-        xmlformatter = {},
+        lemminx = {},
       }
 
       -- Ensure the servers and tools above are installed
