@@ -720,6 +720,7 @@ require('lazy').setup({
         docker_compose_language_service = {},
         jsonls = {},
         lemminx = {},
+        prettier = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -795,7 +796,16 @@ require('lazy').setup({
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
-        javascript = { { 'prettierd', 'prettier' } },
+        html = { 'prettierd', 'prettier', stop_after_first = true },
+        javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescript = { 'prettierd', 'prettier', stop_after_first = true },
+        css = { 'prettierd', 'prettier', stop_after_first = true },
+        markdown = { 'prettierd', 'prettier', stop_after_first = true },
+        yaml = { 'prettierd', 'prettier', stop_after_first = true },
+        json = { 'prettierd', 'prettier', stop_after_first = true },
+        xml = { 'xmlstarlet', stop_after_first = true },
+        xslt = { 'xmlstarlet', stop_after_first = true },
+        xsd = { 'xmlstarlet', stop_after_first = true },
       },
     },
   },
