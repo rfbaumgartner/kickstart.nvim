@@ -803,6 +803,7 @@ require('lazy').setup({
         markdown = { 'prettierd', 'prettier', stop_after_first = true },
         yaml = { 'prettierd', 'prettier', stop_after_first = true },
         json = { 'prettierd', 'prettier', stop_after_first = true },
+        rng = { 'xmlstarlet', stop_after_first = false },
         xml = { 'xmlstarlet', stop_after_first = false },
         xslt = { 'xmlstarlet', stop_after_first = false },
         xsd = { 'xmlstarlet', stop_after_first = false },
