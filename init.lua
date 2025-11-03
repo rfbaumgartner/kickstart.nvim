@@ -743,7 +743,13 @@ require('lazy').setup({
         dockerls = {},
         docker_compose_language_service = {},
         jsonls = {},
-        lemminx = {},
+        lemminx = {
+          xml = {
+            format = {
+              tabSize = 2, -- to be same as xmlstarlet
+            },
+          },
+        },
         prettier = {},
       }
 
