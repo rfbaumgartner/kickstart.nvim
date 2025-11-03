@@ -176,6 +176,10 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+-- yaml, json
+vim.keymap.set('n', '<leader>yj', ':%!yq -o=json<CR> :set filetype=json<CR>', { desc = 'Convert YAML in buffer to JSON' })
+vim.keymap.set('n', '<leader>jy', ':%!yq -P<CR> :set filetype=yaml<CR>', { desc = 'Convert JSON in buffer to YAML' })
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
